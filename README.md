@@ -1,2 +1,2 @@
 # newhorizon
-server tests
+&#128194; server tests
