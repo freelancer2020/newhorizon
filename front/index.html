@@ -12,7 +12,6 @@
   
   
 
-
 <style>
   #container {
     width: 200px;
@@ -20,14 +19,19 @@
     border: 2px solid red;
   }
   
-  
-  
+ 
   
  </style>
-
-
-
-
+  <script>
+    let targ = document.getElementById("container");
+    
+    targ.onclick = function() {
+      this.width = " 400px ";
+    }
+    
+    
+  </script>
+    
 
 </body>
 </html>
