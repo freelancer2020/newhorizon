@@ -20,8 +20,8 @@ function render() {
         for (let i = 0; i < result.length; i++) {
             let img = document.createElement("img");
             img.style.cssText = `width: 100px; height: 100px;`;
-            img[i].src = result[i].src;
-            container.append(img);
+            img.src = result[i].src;
+            myGallery.append(img);
         }
     })
     .catch(err => alert(err.message));
