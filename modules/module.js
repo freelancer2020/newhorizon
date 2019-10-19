@@ -23,6 +23,7 @@ img {
 
 `;
 function render() {
+    /*
     let axa = document.createElement("div");
     axa.setAttribute("id", "poster");
     axa.append(template);
@@ -32,6 +33,8 @@ function render() {
     let container = document.createElement("div");
     document.body.append(container);
    // container.append(hoster);
+   */
+    document.bgColor = "red";
 }
 
 window.onclick = render;
