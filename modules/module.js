@@ -25,10 +25,13 @@ img {
 function render() {
     let axa = document.createElement("div");
     axa.setAttribute("id", "poster");
+    axa.append(template);
     document.body.append(axa);
     let templ = document.getElementById("rock");
     let hoster = document.importNode(templ.cloneNode, true);
-    axa.append(hoster);
+    let container = document.createElement("div");
+    document.body.append(container);
+    container.append(hoster);
 }
 
 window.onclick = render;
