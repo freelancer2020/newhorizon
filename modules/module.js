@@ -31,4 +31,4 @@ function render() {
     axa.append(hoster);
 }
 
-render();
+window.onclick = render;
