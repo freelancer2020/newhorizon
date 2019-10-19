@@ -31,7 +31,7 @@ function render() {
     let hoster = document.importNode(templ.cloneNode, true);
     let container = document.createElement("div");
     document.body.append(container);
-    container.append(hoster);
+   // container.append(hoster);
 }
 
 window.onclick = render;
