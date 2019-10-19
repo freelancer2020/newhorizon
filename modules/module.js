@@ -31,17 +31,7 @@ function render() {
     } catch(err) {
         alert(err.message);
         */
-    let url = "https://raw.githubusercontent.com/freelancer2020/newhorizon/master/modules/g-sm.json";
-    fetch(url)
-    .then(response => {
-        return response.blob();
-    })
-    .then(result => {
-        let a = document.createElement("a");
-        a.textContent = "download";
-        a.href = URL.createObjectURL(blob);
-        document.body.append(a);
-    })
+    document.bgColor = "blue";
 }
 
 window.onclick = render;
