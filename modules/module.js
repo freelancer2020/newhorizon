@@ -1,28 +1,4 @@
 
-const template = `
-<template id = "rock">
-
-<div id = "container">
-<div id = "header"> JavaScript Modules </div>
-<img src = "https://coherent-labs.com/posts/wp-content/uploads/2017/10/x6.png.pagespeed.ic.uaP8KPUyaZ.png">
-</div>
-
-<style>
-
-#container {
-    width: 100vw;
-    height: 400px;
-    background-color: #212121;
-}
-
-img {
-    width: 400px;
-    height: auto;
-}
-
-</style>
-
-`;
 function render() {
     try {
     let container = document.createElement("div");
