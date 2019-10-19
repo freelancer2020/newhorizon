@@ -24,6 +24,7 @@ img {
 
 `;
 function render() {
+    try {
     let container = document.createElement("div");
     container.setAttribute("class", "gallery");
     let myGallery = document.getElementsByClassName("gallery")[0];
@@ -47,8 +48,11 @@ function render() {
             container.append(img);
         }
     })
+    .catch(err => alert(err.message));
 
   document.bgColor = "red";
+    } catch(err) {
+        alert(err.message);
 }
 
 window.onclick = render;
