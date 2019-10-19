@@ -28,7 +28,7 @@ function render() {
     let container = document.createElement("div");
     container.setAttribute("class", "gallery");
     let myGallery = document.getElementsByClassName("gallery")[0];
-    myGallery.getElementsByClassName.cssText = `
+    myGallery.style.cssText = `
     width: 100vw;
     height: 400px;
     display: flex;
