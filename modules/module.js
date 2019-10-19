@@ -1,3 +1,4 @@
+/*
 const template = `
 <template id = "rock">
 
@@ -22,6 +23,7 @@ img {
 </style>
 
 `;
+*/
 function render() {
     /*
     let axa = document.createElement("div");
