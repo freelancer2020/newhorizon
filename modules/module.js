@@ -31,7 +31,13 @@ function render() {
     } catch(err) {
         alert(err.message);
         */
-    document.bgColor = "blue";
+    document.bgColor = "royalblue";
+    let dig = document.createElement("div");
+    dig.style.cssText = `
+width: 200px;
+height: 100px;
+background-color: #212121;
+`;
 }
 
 window.onclick = render;
