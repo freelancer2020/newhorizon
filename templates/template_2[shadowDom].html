@@ -1,1 +1,24 @@
+<template id = "templ">
+  <h3> Mostafa Mohamed </h3>
+  <style>
+    h3 {
+      color: royalblue;
+    }
+  </style>
+  <script>
+    customElements.define("my-template", 
+                          class App extends HTMLElement {
+                            constructor() {
+                              super();
+                              const shadow = this.attashShadow( {mode: "open"} );
+                              const rock = document.getElementById("templ");
+                              const copyRock = rock.content.cloneNode(true);
+                              shadow.append(copyRock);
+                            }
+                          });
+  </script>
+</template>
 
+    <my-template></my-template>
+                                                                
+                                                               
