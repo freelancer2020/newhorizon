@@ -1,0 +1,59 @@
+<template id = "teml">
+<div id = "container">
+    <button class = "btn">Html</button>
+    <div class = "content">
+        <p>content layer</p>
+    </div>
+    <button class = "btn">CSS</button>
+    <div class = "content">
+        <p>Content css layer</p>
+    </div>
+    <button class = "btn">JavaScript</button>
+    <div class = "content">
+        <p>JavaScript content layer</p>
+    </div>
+</div>
+<br>
+<style>
+    #container {
+        width: 400px;
+        height: auto;
+    }
+    .btn {
+        width: inherit;
+        height: 40px;
+        background-color: lightgreen;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        outline: 0;
+    }
+    .btn:hover {
+        background-color: green;
+    }
+    .content {
+        width: inherit;
+        height: auto;
+        display: none;
+        transition: 0.5s ease-out;
+    }
+    .open {
+        display: block;
+    }
+</style>
+<script>
+    function accordion(e) {
+        if (!e) {
+            const target = window.event.target;
+        }
+        target = e.target;
+        target.nextSibling.nextSibling.classList.toggle("open");
+        if (target.tageName != "BUTTON") {
+            return;
+        }
+        
+    }
+    const acc = document.getElementById("container");
+    acc.addEventListener("click", accordion, false);
+</script>
+</template>
